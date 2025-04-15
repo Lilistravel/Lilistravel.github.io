@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готовые маршруты для путешествий</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #000;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header-center {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .icon {
+            cursor: pointer;
+            font-size: 24px;
+        }
+        .content {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .route-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .route-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .route-description {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .route-details {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .view-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ddd;
+        }
+        .footer-icon {
+            font-size: 24px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="icon">←</div>
+            <div class="icon">∨</div>
+            <div class="icon">ⓘ</div>
+        </div>
+        <div class="header-center">
+            Готовые маршруты
+        </div>
+        <div class="header-right">
+            <div class="icon">↗</div>
+            <div class="icon">⋮</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Готовые маршруты для путешествий</h1>
+        
+        <input type="text" class="search-bar" placeholder="Поиск по маршрутам...">
+        
+        <div class="route-card">
+            <h2 class="route-title">Сейшелы за 7 дней</h2>
+            <p class="route-description">Пляжи, парки и экзотика на Маэ, Ла Диг и Праслине.</p>
+            <p class="route-details">Длительность: 7 дней</p>
+            <p class="route-details">Цена: $45</p>
+            <button class="view-button">Посмотреть маршрут</button>
+        </div>
+        
+        <div class="route-card">
+            <h2 class="route-title">Италия: от Рима до Венеции</h2>
+            <p class="route-description">История, архитектура и еда Италии в одном маршруте.</p>
+            <p class="route-details">Длительность: 10 дней</p>
+            <p class="route-details">Цена: $60</p>
+            <button class="view-button">Посмотреть маршрут</button>
+        </div>
+        
+        <div class="route-card">
+            <h2 class="route-title">Тайланд: экзотический отдых</h2>
+            <p class="route-description">Бангкок, Пхукет и храмы северного Тайланда.</p>
+            <p class="route-details">Длительность: 14 дней</p>
+            <p class="route-details">Цена: $55</p>
+            <button class="view-button">Посмотреть маршрут</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-icon">≡</div>
+        <div class="footer-icon">□</div>
+        <div class="footer-icon">◁</div>
+    </div>
+</body>
+</html>
